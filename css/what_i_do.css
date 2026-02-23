@@ -1,5 +1,7 @@
-section{
-    background-color: #f8f8f8;
+section .title h5{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: #ed4848;
 }
 section .do-me::after{
     content:"";
@@ -7,31 +9,31 @@ section .do-me::after{
     clear: both;
 }
 section .do-me .do-inner{
-    width:30%;
-    padding:2rem;
+    width:21%;
+    padding:1rem 1rem 1.5rem 1rem;
     float:left;
     background-color: #fff;
     margin-right: 5%;
+    margin-bottom: 3rem;
     cursor: pointer;
+
+    min-height:230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
 }
-section .do-me .do-inner:last-child{
+section .do-me .do-inner h3{
+    font-size: 2rem;
+}
+section .do-me .do-inner:nth-child(4n){
     margin-right:0;
 }
-section .do-me .do-inner .icon i{
-    font-size: 2.5rem;
-    color: #ff6a6a
-}
-section .di-me .do-inner .content h3{
-    font-size: 2rem;
-    margin: 1rem 0;
-}
-section .do-me .do-inner .content p{
-    font-size: 1.15rem;
-}
-section .do-me .do-inner:hover{
-    background-color: lightcoral;
-    color: white;
-}
-section .do-me .do-inner:hover .icon i{
-    color: white;
+section .do-me .do-inner img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1rem;
 }

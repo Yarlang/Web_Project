@@ -1,6 +1,7 @@
 header{
-    position: absolute;
+    position: fixed;
     top:0;
+    z-index: 1;
     width:100%;
     padding:1rem;
 }
@@ -14,6 +15,7 @@ header button{
     background-color: transparent;
     border: 0;
     cursor: pointer;
+    color: white;
 }
 header h1 button{
     font-size: 2rem;
@@ -27,4 +29,18 @@ header nav ul li{
 }
 header nav ul li button{
     font-size: 1.2rem;
+}
+
+header.active{
+    background-color: #000;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
