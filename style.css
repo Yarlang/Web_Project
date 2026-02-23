@@ -90,7 +90,8 @@ main p{
     margin: 0 auto;
     font-size: 1.25rem;
 }
-main button.download{
+main button.reload{
+    font-size: 1.5rem;
     background-color: transparent;
     border: 3px solid white;
     border-radius: 20px;
@@ -209,30 +210,33 @@ section .do-me::after{
     clear: both;
 }
 section .do-me .do-inner{
-    width:30%;
+    width:21%;
     padding:1rem 1rem 1.5rem 1rem;
     float:left;
     background-color: #fff;
     margin-right: 5%;
     margin-bottom: 3rem;
     cursor: pointer;
+
+    min-height:230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
 }
-section .do-me .do-inner:nth-child(3n){
+section .do-me .do-inner h3{
+    font-size: 2rem;
+}
+section .do-me .do-inner:nth-child(4n){
     margin-right:0;
 }
-section .di-me .do-inner .content h3{
-    font-size: 2rem;
-    margin: 1rem 0;
-}
-section .do-me .do-inner .content p{
-    font-size: 1.15rem;
-}
-section .do-me .do-inner:hover{
-    background-color: lightcoral;
-    color: white;
-}
-section .do-me .do-inner:hover .icon i{
-    color: white;
+section .do-me .do-inner img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1rem;
 }
 
 /* background */
